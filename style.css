@@ -1,0 +1,371 @@
+:root{
+    --primary-color:  #ff4e65;
+    --hover-color: #f17a8a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open sans', sans-serif;
+    background: #f1f1f1;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.links{
+    text-decoration: none;
+    color: #ff6d80;
+}
+.links:visited{
+    color: #ff6d80;
+    text-decoration: none;
+}
+.links:active{
+    color: #ff6d80;
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 1em 0;
+}
+
+p{
+    margin: 0;
+    padding: 1em 0;
+}
+
+.container{
+    padding: 0 1.5em;
+}
+
+.btn{
+    background: var(--primary-color);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: .5em 2em;
+    margin: .5em 0;
+}
+
+.btn:hover{
+    background: var(--hover-color);
+}
+
+/* NAVIGATION */
+
+#main-header{
+    background: var(--primary-color);
+    color: #fff;
+    height: 100px;
+}
+
+
+#mobileNav{
+    padding-top: 0.9em;
+    font-size: 2em;
+    float: left;
+    cursor: pointer;
+}
+
+#mobileNav:hover{
+    color: #444;
+}
+
+#main-nav #brand{
+    margin: 0;
+    padding: 1.4em;
+}
+
+#navigation{
+    display: none;
+}
+
+#main-nav #navigation li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#main-nav #navigation li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Side Navigation */
+
+#side-nav{
+    position: fixed;
+    width: 300px;
+    background: #ff6d80;
+    height: 150%;
+    left: -310px;
+    transition: left 300ms;
+    box-shadow: 3px 0px 5px #444;
+}
+
+#side-nav ul{
+    padding: 10px 0px;
+    text-align: left;
+}
+
+#side-nav ul li a{
+    display: block;
+    padding: 30px 0px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+
+#closeButton{
+    cursor: pointer;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+
+#showcase{
+    height: calc(100vh - 100px);
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .bg-image{
+    position: absolute;
+    background: #333 url('https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_960_720.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#showcase h1{
+    padding-top: calc(100vh/2.5 - 100px);
+    padding-bottom: 0px;
+    font-size: 2em;
+    line-height: 1.5;
+    text-shadow: 0 0 4px #222;
+    transition: padding-top 700ms;
+}
+
+#showcase p{
+    text-shadow: 0 0 4px #222;
+}
+
+/* Project Preview */
+
+#project-preview{
+    background: var(--primary-color);
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+/* Project Cards */
+
+
+
+#project-cards{
+    padding: 2em 1em 1em;
+}
+
+#project-cards ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#project-cards li{
+    list-style: none;
+    background: #fff;
+    margin-bottom: 1em;
+    box-shadow: 0 0 15px 1px #ddd;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+#project-cards li:hover{
+    transition: background-color 400ms;
+    background-color: #f17a8a;
+}
+
+.card-content{
+    padding: 1.5em;
+}
+
+/* About Section */
+#about-section{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding:20px;
+}
+
+#about-section a{
+    background-color: #fff;
+    color: var(--primary-color);
+    transition: color,background-color 500ms;
+}
+#about-section a:hover{
+    transition: 500ms;
+    background-color:var(--primary-color);
+    color:  #fff;
+}
+.about-text{
+    background-color: #fff;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 0 0 15px 1px #ddd;
+}
+
+.about-text h1{
+    font-size: 3em;
+    color: var(--primary-color);
+}
+
+/* About Footer  */
+#about-footer{
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/* Footer */
+
+#main-footer{
+    background-color: #333;
+    color: #fff;
+}
+
+/* Content Heading */
+#content-header{
+    background-color:#3f7ee2;
+    color: #fff;
+}
+#content-header h1{
+    text-align: left;
+    padding: 25px 30px;
+}
+
+/* Modal */
+.modal{
+    position: fixed;
+    left: calc(50% - 200px);
+    top: -250px;
+    width: 400px;
+    min-height: 200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #555;
+    transition: top 500ms;
+}
+.modal-title{
+    background: #ff3853;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    font-size: .6em;
+    position: relative;
+}
+
+.modal-text{
+    padding: 10px;
+}
+
+.exit-modal{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+.exit-modal:hover{
+    transition: color 300ms;
+    color: #444;
+}
+
+
+/* Media Queries */
+
+@media(min-width: 700px){
+    #side-nav{
+        display: none;
+    }
+
+    #mobileNav{
+        display: none;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    .container, #project-cards ul{
+        grid-column: 2/4;
+    }
+    #project-cards ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .box{
+        grid-column: span 2;
+    }
+    #project-cards li{
+        width: 31%;
+    }
+    #brand{
+        float: left;
+        line-height: 65px;
+    }
+    #navigation{
+        display: block;
+        float: right;
+        line-height: 100px;
+    }
+    #main-nav #brand{
+    margin: 0;
+    padding: 0.7em;
+    }
+    #main-nav #navigation li{
+    display: inline-block;
+    padding: 0;
+    }
+    #navigation a{
+        display: block;
+        padding: 0 10px;
+        width: 90px;
+        margin: 0;
+        transition: background 300ms;
+    }
+    #navigation a:hover{
+        transition: background 300ms;
+        display: block;
+        background:#5481c9;
+    }
+    #showcase h1{
+        font-size: 2.5em;
+    }
+}

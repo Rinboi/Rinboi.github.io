@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-title">
+            <h1>Message<span class="exit-modal" id="close-modal">
+                <i class="fa fa-times-circle"></i>
+            </span></h1>
+        </div>
+        <div class="modal-content">
+            <p id="modal-message" class="modal-text">
+                My Github link:
+                <br>
+            <a href="https://github.com/Rinboi" target="_blank">https://github.com/Rinboi</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container">
+            <nav id="main-nav">
+                <h1 id="mobileNav">
+                    <i class="fa fa-bars"></i>
+                </h1>
+
+                <h1 id="brand">My Portfolio</h1>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SHOWCASE -->
+    <section id="showcase">
+        <div class="bg-image"></div>
+        <div class="container">
+            <div class="content-text">
+                <h1>Hello, I'm a Student Web Developer</h1>
+                <p>Front-end Web Developer | Designer</p>
+                <a href="#" class="btn" id="callModal">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN AREA-->
+    <main id="main-area">
+
+        <!-- Project Preview -->
+        <section id="project-preview" class="grid">
+            <div class="container">
+                <h2 class="content-title">
+                    Welcome to my website
+                </h2>
+                <div class="project-text">
+                    <p>
+                        Hi, I'm Jene Emmanuel! An information technology student that is looking to obtain an Intern position as a Front-end Web Developer. Take
+                        a look inside my website portfolio and browse my projects!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Cards -->
+        <section id="project-cards" class="grid">
+            <ul>
+                <li>
+                    <a href="https://github.com/Rinboi/Tomorrow-Always-Comes-CMS-Based-Promotional-Website" style="text-decoration:none;  color:inherit;" target="_blank">
+                    <div class="card">
+                        <img src="https://i.ibb.co/4mjwMWv/tomorrow.png" alt="Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Tomorrow Always Comes</h3>
+                            <p>
+                                A CMS-Based Promotional Website for the Capstone Project titled: <i>Tomorrow Always Comes
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Rinboi/TICAP" style="text-decoration:none;  color:inherit;" target="_blank">
+                    <div class="card">
+                        <img src="https://i.ibb.co/jbF79bX/ticap.png"
+                            alt="Image">
+                        <div class="card-content">
+                            <h3 class="card-title">TICAP</h3>
+                            <p>
+                                <i>TAGUIG INTEGRATED CLASS ADMISSION PORTAL: </i>An Online Student Portal Website for Taguig Integrated School
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Rinboi/3DGE-A-3D-Printing-e-Commerce-Website" style="text-decoration:none;  color:inherit;" target="_blank">
+                        <div class="card">
+                    <div class="card">
+                        <img src="https://i.ibb.co/02gnW1K/edge.png"
+                            alt="Image">
+                        <div class="card-content">
+                            <h3 class="card-title">3DGE</h3>
+                            <p>
+                                A 3D Printing Service e-Commerce Concept Website Project for the course <i>IT0041: E-Commerce with Digital Marketing</i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about-section" class="grid">
+            <div class="container">
+                <h1>About Projects</h1>
+                <p>
+                    These project cards will redirect you to the repositories of some projects that I have developed and contributed to.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <p>Tandoc, J. P.
+            <sup>&trade;</sup> Copyright &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+
+</body>
+
+</html>
